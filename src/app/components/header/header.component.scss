@@ -1,0 +1,21 @@
+.body-header {
+    background-color: #4b5a6d;
+    display: grid;
+    grid-template-columns: 20% auto auto;
+
+    // color: #fdd77e;
+    .menu {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+
+        span {
+            color: white;
+            cursor: pointer;
+        }
+    }
+
+    mat-form-field {
+        padding-top: 10px;
+    }
+}
