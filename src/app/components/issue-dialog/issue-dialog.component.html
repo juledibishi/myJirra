@@ -1,1 +1,56 @@
-<p>test</p>
+<div class="popup-container">
+    <h2>Create Issue</h2>
+    <form [formGroup]="issueForm">
+
+        <mat-form-field appearance="fill"
+                        class="full-width">
+            <mat-label>Project</mat-label>
+            <mat-select formControlName="project">
+                <mat-option *ngFor="let project of projects"
+                            [value]="project">
+                    {{ project }}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+
+
+        <mat-form-field appearance="fill"
+                        class="full-width">
+            <mat-label>Issue Type</mat-label>
+            <mat-select formControlName="issueType">
+                <mat-option *ngFor="let type of issueTypes"
+                            [value]="type">
+                    {{ type }}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+
+
+        <mat-form-field appearance="fill"
+                        class="full-width">
+            <mat-label>Summary</mat-label>
+            <input matInput
+                   formControlName="summary"
+                   placeholder="Enter a brief summary">
+        </mat-form-field>
+
+        <mat-form-field appearance="fill"
+                        class="full-width">
+            <mat-label>Description</mat-label>
+            <textarea matInput
+                      formControlName="description"
+                      rows="4"
+                      placeholder="Provide a detailed description"></textarea>
+        </mat-form-field>
+
+
+        <div class="button-group">
+            <button mat-button
+                    color="warn"
+                    (click)="onCancel()">Cancel</button>
+            <button mat-raised-button
+                    color="primary"
+                    (click)="onCreate()">Create</button>
+        </div>
+    </form>
+</div>

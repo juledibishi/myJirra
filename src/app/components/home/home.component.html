@@ -1,0 +1,13 @@
+<div class="issues-container">
+    <h2>My Issues</h2>
+
+    <div class="issues-list">
+        <div *ngFor="let issue of issues"
+             class="issue-card">
+            <h3>{{ issue.summary }}</h3>
+            <p><strong>Project:</strong> {{ issue.project }}</p>
+            <p><strong>Type:</strong> {{ issue.issueType }}</p>
+            <p><strong>Description:</strong> {{ issue.description }}</p>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,42 @@
+.issues-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f5f7;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #172b4d;
+}
+
+.issues-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.issue-card {
+    background: white;
+    border-radius: 6px;
+    padding: 15px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    border-left: 4px solid #0052cc;
+    /* Blue accent for Jira-like style */
+}
+
+.issue-card h3 {
+    margin: 0 0 10px;
+    font-size: 1.2rem;
+    color: #0747a6;
+}
+
+.issue-card p {
+    margin: 5px 0;
+    font-size: 0.95rem;
+    color: #344563;
+}
