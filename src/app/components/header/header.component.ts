@@ -17,14 +17,13 @@ export class HeaderComponent {
   constructor() { }
 
   ngOnInit() { }
+
   openDialog(): void {
     const dialogRef = this.dialog.open(IssueDialogComponent, {
 
     });
 
     dialogRef.afterClosed().subscribe(result => {
-      console.log('The dialog was closed');
-
     });
   }
 }
